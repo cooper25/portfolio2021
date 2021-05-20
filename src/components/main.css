@@ -52,6 +52,21 @@ p {
 .right_image-container:hover footer, .right_image-container:hover footer a {
     opacity: 100%;
 }
+.bottom-socials {
+    position: absolute;
+    bottom: 9vh;
+    padding: 5px;
+    margin: 0px;
+    background: white;
+    border-radius: 5px;
+}
+.bottom-socials img {
+    max-height: 16px;
+    min-height: 16px;
+    margin: 3px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
 footer {
     transition: .2s;
     margin: 30px;
