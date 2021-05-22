@@ -14,6 +14,7 @@ import behance from "../images/icons/behance.png"
 var objects = gallery.length + 1
 var data = gallery[Math.floor(Math.random() * objects)]
 
+
 const IndexPage = () => {
   return (
     <body>
@@ -22,11 +23,12 @@ const IndexPage = () => {
         <meta name="author" content="Cooper Tsoris"/>
         <meta name="theme-color" content="#000000"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1a7b87ab2d484241818047ef8bf2771d"}'></script>
       </Helmet>
       <div className="elements">
         <img draggable="false" alt="cooper" height="30" src={cooper}></img>
         <div className="center-text">
-          <p>Self-taught Graphic & Web Designer based out of the United States with over two years of experience.</p>
+          <p>Self-taught Graphic & Web Designer for hire; based out of the United States with over two years of experience.</p>
         </div>
         <div className="bottom-socials">
           <a draggable="false" target="_blank" rel="noopener noreferrer" href="https://directory.cppr.dev/"><img draggable="false" src={directory} alt="directory"></img></a>

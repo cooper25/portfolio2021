@@ -88,16 +88,11 @@ footer a {
     font-weight: 700;
     text-decoration: none;
 }
-@media screen and (max-width: 1400px) {
-    .right_image-container {
-        width: 100vh;
-    }
-}
 @media screen and (max-width: 1100px) {
     .right_image-container {
         display: none;
     }
     p {
-        max-width: 100%;
+        max-width: 80%;
     }
 }
