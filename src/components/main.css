@@ -95,4 +95,12 @@ footer a {
     p {
         max-width: 80%;
     }
+    .bottom-socials {
+        padding: 4px;
+    }
+    .bottom-socials img {
+        max-height: 20px;
+        min-height: 20px;
+        padding: 2px;
+    }
 }
