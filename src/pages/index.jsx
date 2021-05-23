@@ -28,9 +28,10 @@ const IndexPage = () => {
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1a7b87ab2d484241818047ef8bf2771d"}'></script>
       </Helmet>
       <div className="elements">
-        <img id="wordmark" draggable="false" alt="cooper" height="30" src={cooper}></img>
+        <img id="wordmark" draggable="false" alt="cooper" height="25" src={cooper}></img>
         <div className="center-text">
-          <p>Self-taught Graphic & Web Designer for hire; based out of the United States with over two years of experience.</p>
+          <div className="hireable-tag">NOT FOR HIRE</div><br/>
+          <p>Self-taught Graphic & Web Designer based out of the United States with over two years of experience.</p>
         </div>
         <div className="bottom-socials">
           <div className="social-buttons">
@@ -43,7 +44,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="right_image-container">
-        <div className="right_image" style={{backgroundImage: `url("${data.projectImage}")`}}></div>
+        <div className="right_image" style={{backgroundImage: `url(${data.projectImage})`}}></div>
         <footer>View <a target="_blank" rel="noopener noreferrer" href={data.projectLink}>{data.projectName}</a> on <b>Behance</b></footer>
       </div>
     </body>
