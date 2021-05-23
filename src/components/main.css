@@ -40,15 +40,15 @@ p {
     width: 100%;
     height: 100%;
     background: url(../images/placeholder.png) #ffffff20;
-    background-size: 160vh;
+    background-size: 120%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 8px;
     z-index: -1;
 }
 .right_image-container:hover .right_image {
-    background-size: 185vh;
     filter: brightness(70%);
+    background-size: 135%;
 }
 .right_image-container:hover footer, .right_image-container:hover footer a {
     opacity: 100%;
