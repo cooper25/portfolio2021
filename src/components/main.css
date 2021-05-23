@@ -14,9 +14,9 @@ body {
 }
 p {
     color: white;
-    font: 500 23px "inter", sans-serif;
+    font: 500 22px "inter", sans-serif;
     line-height: 50px;
-    max-width: 25%;
+    max-width: 18%;
 }
 .center-text {
     position: absolute;
@@ -26,7 +26,7 @@ p {
 .right_image-container {
     transition: .2s;
     position: absolute;
-    width: 65%;
+    width: 70%;
     height: 90vh;
     right: 0px;
     top: 0px;
@@ -56,17 +56,22 @@ p {
 .bottom-socials {
     position: absolute;
     bottom: 9vh;
-    padding: 5px;
+    padding: 8px;
     margin: 0px;
-    background: white;
-    border-radius: 5px;
+    background-image: url(../images/icons/socialbar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 28px;
 }
 .bottom-socials img {
     max-height: 16px;
     min-height: 16px;
-    margin: 3px;
-    margin-bottom: 0px;
+    margin: 3px 3px 6px 6.1px;
     cursor: pointer;
+}
+.social-buttons {
+    margin-top: -3.25px;
+    margin-left: -5.75px;
 }
 footer {
     transition: .2s;
@@ -97,12 +102,16 @@ footer a {
         max-width: 80%;
     }
     .bottom-socials {
-        padding: 4px;
+        padding: 7px;
+        max-height: 40px;
+        min-height: 40px;
     }
     .bottom-socials img {
         max-height: 20px;
         min-height: 20px;
-        padding: 2px;
+        padding: 3px;
+        margin-top: 1.45px;
+        margin-right: -1.75px;
     }
 }
 @media (prefers-color-scheme: light) {
