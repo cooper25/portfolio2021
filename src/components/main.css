@@ -55,23 +55,19 @@ p {
 }
 .bottom-socials {
     position: absolute;
+    background: white;
+    border-radius: 5px;
     bottom: 9vh;
-    padding: 8px;
+    padding: 5px;
+    padding-bottom: 1.5px;
     margin: 0px;
-    background-image: url(../images/icons/socialbar.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 28px;
 }
 .bottom-socials img {
     max-height: 16px;
     min-height: 16px;
-    margin: 3px 3px 6px 6.1px;
+    margin: 0px;
+    padding: 3px;
     cursor: pointer;
-}
-.social-buttons {
-    margin-top: -3.25px;
-    margin-left: -5.75px;
 }
 footer {
     transition: .2s;
@@ -112,15 +108,12 @@ footer a {
     }
     .bottom-socials {
         padding: 7px;
-        max-height: 40px;
-        min-height: 40px;
+        padding-bottom: 3px;
     }
     .bottom-socials img {
-        max-height: 20px;
+        padding: 5px;
         min-height: 20px;
-        padding: 3px;
-        margin-top: 1.45px;
-        margin-right: -1.75px;
+        max-height: 20px;
     }
 }
 @media (prefers-color-scheme: light) {
