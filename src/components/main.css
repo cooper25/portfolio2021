@@ -130,8 +130,12 @@ footer a {
     p {
         color: black;
     }
-    .bottom-socials, #wordmark, .hireable-tag {
+    .bottom-socials, #wordmark {
         filter: invert(100%);
+    }
+    .hireable-tag {
+        background: #00000025;
+        color: black;
     }
     ::selection {
         background: black;
