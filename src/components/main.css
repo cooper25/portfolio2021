@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 body {
+    transition: .2s;
     margin: 0px;
     padding: 0px;
     background: black;
@@ -102,5 +103,20 @@ footer a {
         max-height: 20px;
         min-height: 20px;
         padding: 2px;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background: white;
+    }
+    p {
+        color: black;
+    }
+    .bottom-socials, #wordmark {
+        filter: invert(100%);
+    }
+    ::selection {
+        background: black;
+        color: white;
     }
 }

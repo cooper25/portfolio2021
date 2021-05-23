@@ -9,6 +9,7 @@ import discord from "../images/icons/discord.png"
 import github from "../images/icons/github.png"
 import twitter from "../images/icons/twitter.png"
 import behance from "../images/icons/behance.png"
+import favicon from "../images/icons/favicon.png"
 
 // Choose Random Project
 var objects = gallery.length + 1
@@ -19,14 +20,15 @@ const IndexPage = () => {
   return (
     <body>
       <Helmet>
-        <title>cooper tsoris</title>
+        <title>coopertsoris</title>
         <meta name="author" content="Cooper Tsoris"/>
         <meta name="theme-color" content="#000000"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="shortcut icon" href={favicon}/>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1a7b87ab2d484241818047ef8bf2771d"}'></script>
       </Helmet>
       <div className="elements">
-        <img draggable="false" alt="cooper" height="30" src={cooper}></img>
+        <img id="wordmark" draggable="false" alt="cooper" height="30" src={cooper}></img>
         <div className="center-text">
           <p>Self-taught Graphic & Web Designer for hire; based out of the United States with over two years of experience.</p>
         </div>
