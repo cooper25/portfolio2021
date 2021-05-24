@@ -30,7 +30,7 @@ const IndexPage = () => {
       <div className="elements">
         <img id="wordmark" draggable="false" alt="cooper" height="25" src={cooper}></img>
         <div className="center-text">
-          <div className="hireable-tag">NOT FOR HIRE</div><br/>
+          <div className="hireable-tag">FOR HIRE</div><br/>
           <p>Self-taught Graphic & Web Designer based out of the United States with over two years of experience.</p>
         </div>
         <div className="bottom-socials">
