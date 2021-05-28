@@ -30,16 +30,16 @@ const IndexPage = () => {
       <div className="elements">
         <img id="wordmark" draggable="false" alt="cooper" height="25" src={cooper}></img>
         <div className="center-text">
-          <div className="hireable-tag">FOR HIRE</div><br/>
+          <a href="https://directory.cppr.dev/" draggable="false" target="_blank" rel="noopener noreferrer"><div className="hireable-tag">FOR HIRE</div></a><br/>
           <p>Self-taught Graphic & Web Designer based out of the United States with over two years of experience.</p>
         </div>
         <div className="bottom-socials">
           <div className="social-buttons">
-            <a draggable="false" target="_blank" rel="noopener noreferrer" href="https://directory.cppr.dev/"><img draggable="false" src={directory} alt="directory"></img></a>
-            <a draggable="false" target="_blank" rel="noopener noreferrer" href="https://discord.com/users/307273393600724994/"><img draggable="false" src={discord} alt="discord"></img></a>
-            <a draggable="false" target="_blank" rel="noopener noreferrer" href="https://github.com/cooper25"><img draggable="false" src={github} alt="github"></img></a>
-            <a draggable="false" target="_blank" rel="noopener noreferrer" href="https://twitter.com/loertis_"><img draggable="false" src={twitter} alt="twitter"></img></a>
-            <a draggable="false" target="_blank" rel="noopener noreferrer" href="https://behance.net/coopertsoris"><img draggable="false" src={behance} alt="behance"></img></a>
+            <a title="Link Directory" draggable="false" target="_blank" rel="noopener noreferrer" href="https://directory.cppr.dev/"><img draggable="false" src={directory} alt="directory"></img></a>
+            <a title="Discord" draggable="false" target="_blank" rel="noopener noreferrer" href="https://discord.com/users/307273393600724994/"><img draggable="false" src={discord} alt="discord"></img></a>
+            <a title="GitHub" draggable="false" target="_blank" rel="noopener noreferrer" href="https://github.com/cooper25"><img draggable="false" src={github} alt="github"></img></a>
+            <a title="Twitter" draggable="false" target="_blank" rel="noopener noreferrer" href="https://twitter.com/loertis_"><img draggable="false" src={twitter} alt="twitter"></img></a>
+            <a title="Behance" draggable="false" target="_blank" rel="noopener noreferrer" href="https://behance.net/coopertsoris"><img draggable="false" src={behance} alt="behance"></img></a>
           </div>
         </div>
       </div>
