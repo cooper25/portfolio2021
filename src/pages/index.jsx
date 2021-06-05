@@ -15,12 +15,6 @@ import favicon from "../images/icons/favicon.png"
 var objects = gallery.length + 1
 var data = gallery[Math.floor(Math.random() * objects)]
 
-// Title
-var title = "coopertsoris"
-if(window.location.href.includes("localhost")) {
-  title = "localhost - coopertsoris"
-}
-
 const IndexPage = () => {
   return (
     <body>
