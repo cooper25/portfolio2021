@@ -19,26 +19,19 @@ const IndexPage = () => {
   return (
     <body>
       <Helmet>
-        {{/* Primary Meta Tags */}}
         <title>coopertsoris</title>
         <meta name="title" content="coopertsoris"/>
         <meta name="description" content="Self-taught Graphic & Web Designer based out of the United States with over two years of experience."/>
-
-        {{/* OG/Facebook */}}
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://cppr.dev/"/>
         <meta property="og:title" content="coopertsoris"/>
         <meta property="og:description" content="Self-taught Graphic & Web Designer based out of the United States with over two years of experience."/>
         <meta property="og:image" content={metaThumbnail}/>
-
-        {{/* Twitter */}}
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:url" content="https://cppr.dev/"/>
         <meta property="twitter:title" content="coopertsoris"/>
         <meta property="twitter:description" content="Self-taught Graphic & Web Designer based out of the United States with over two years of experience."/>
         <meta property="twitter:image" content={metaThumbnail}/>
-
-        {{/* Other */}}
         <meta name="theme-color" content="#000000"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href={favicon}/>
