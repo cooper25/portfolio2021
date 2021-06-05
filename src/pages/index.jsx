@@ -19,7 +19,7 @@ const IndexPage = () => {
   return (
     <body>
       <Helmet>
-        <title>{title}</title>
+        <title>coopertsoris</title>
         <meta name="title" content="coopertsoris"/>
         <meta name="description" content="Self-taught Graphic & Web Designer based out of the United States with over two years of experience."/>
         <meta property="og:type" content="website"/>
