@@ -3,6 +3,7 @@ import Helmet from "react-helmet"
 import "../components/main.css"
 import gallery from "../components/gallery.json"
 import cooper from "../images/cooper.png"
+import metaThumbnail from "../images/icons/meta-thumbnail.png"
 //import icons (i know theres a better way but it works)
 import directory from "../images/icons/directory.png"
 import discord from "../images/icons/discord.png"
@@ -11,24 +12,40 @@ import twitter from "../images/icons/twitter.png"
 import behance from "../images/icons/behance.png"
 import favicon from "../images/icons/favicon.png"
 
-// Choose Random Project
 var objects = gallery.length + 1
 var data = gallery[Math.floor(Math.random() * objects)]
-
 
 const IndexPage = () => {
   return (
     <body>
       <Helmet>
+        {{/* Primary Meta Tags */}}
         <title>coopertsoris</title>
-        <meta name="author" content="Cooper Tsoris"/>
+        <meta name="title" content="coopertsoris"/>
+        <meta name="description" content="Self-taught Graphic & Web Designer based out of the United States with over two years of experience."/>
+
+        {{/* OG/Facebook */}}
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://cppr.dev/"/>
+        <meta property="og:title" content="coopertsoris"/>
+        <meta property="og:description" content="Self-taught Graphic & Web Designer based out of the United States with over two years of experience."/>
+        <meta property="og:image" content={metaThumbnail}/>
+
+        {{/* Twitter */}}
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://cppr.dev/"/>
+        <meta property="twitter:title" content="coopertsoris"/>
+        <meta property="twitter:description" content="Self-taught Graphic & Web Designer based out of the United States with over two years of experience."/>
+        <meta property="twitter:image" content={metaThumbnail}/>
+
+        {{/* Other */}}
         <meta name="theme-color" content="#000000"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href={favicon}/>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1a7b87ab2d484241818047ef8bf2771d"}'></script>
       </Helmet>
       <div className="elements">
-        <img id="wordmark" draggable="false" alt="cooper" height="25" src={cooper}></img>
+        <img id="wordmark" draggable="false" alt="cooper" height="30" src={cooper}></img>
         <div className="center-text">
           <a href="https://directory.cppr.dev/" draggable="false" target="_blank" rel="noopener noreferrer"><div className="hireable-tag">FOR HIRE</div></a><br/>
           <p>Self-taught Graphic & Web Designer based out of the United States with over two years of experience.</p>
@@ -45,7 +62,8 @@ const IndexPage = () => {
       </div>
       <div className="right_image-container">
         <div className="right_image" style={{backgroundImage: `url(${data.projectImage})`}}></div>
-        <footer>View <a target="_blank" rel="noopener noreferrer" href={data.projectLink}>{data.projectName}</a> on <b>Behance</b></footer>
+        {/*<a target="_blank" rel="noopener noreferrer" href="https://behance.net/coopertsoris"><footer style={{marginBottom: "80px", background: "#ffffff", color: "black"}}>View More Projects</footer></a>*/}
+        <a target="_blank" rel="noopener noreferrer" href={data.projectLink}><footer>View <b>{data.projectName}</b> on <b>Behance</b></footer></a>
       </div>
     </body>
   )
