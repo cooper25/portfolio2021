@@ -4,7 +4,6 @@ import "../components/main.css"
 import gallery from "../components/gallery.json"
 import cooper from "../images/cooper.png"
 import metaThumbnail from "../images/icons/meta-thumbnail.png"
-//import icons (i know theres a better way but it works)
 import directory from "../images/icons/directory.png"
 import discord from "../images/icons/discord.png"
 import github from "../images/icons/github.png"
@@ -12,14 +11,21 @@ import twitter from "../images/icons/twitter.png"
 import behance from "../images/icons/behance.png"
 import favicon from "../images/icons/favicon.png"
 
+// Banner Display
 var objects = gallery.length + 1
 var data = gallery[Math.floor(Math.random() * objects)]
+
+// Title
+var title = "coopertsoris"
+if(window.location.href.includes("localhost")) {
+  title = "localhost - coopertsoris"
+}
 
 const IndexPage = () => {
   return (
     <body>
       <Helmet>
-        <title>coopertsoris</title>
+        <title>{title}</title>
         <meta name="title" content="coopertsoris"/>
         <meta name="description" content="Self-taught Graphic & Web Designer based out of the United States with over two years of experience."/>
         <meta property="og:type" content="website"/>
