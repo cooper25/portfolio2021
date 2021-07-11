@@ -1,9 +1,14 @@
 @import url('https://rsms.me/inter/inter.css');
 body {
-    transition: .2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     background: black;
+    cursor: url("../images/cursor.png"), auto;
+    transition: .2s;
+    user-select: none;
 }
 ::selection {
     background: white;
@@ -136,5 +141,8 @@ footer a {
     ::selection {
         background: black;
         color: white;
+    }
+    body {
+        cursor: url("../images/cursorlight.png"), auto;
     }
 }
