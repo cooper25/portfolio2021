@@ -112,11 +112,11 @@ footer a {
         max-width: 80%;
     }
     .bottom-socials {
-        padding: 5px;
-        padding-bottom: 1.175px;
+        padding: 4px;
+        padding-bottom: 1.125px;
     }
     .bottom-socials img {
-        padding: 6px;
+        padding: 5.75px;
         min-height: 20px;
         max-height: 20px;
     }
