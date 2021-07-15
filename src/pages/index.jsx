@@ -47,15 +47,14 @@ const IndexPage = () => {
           <div className="social-buttons">
             <a title="Link Directory" draggable="false" target="_blank" rel="noopener noreferrer" href="https://directory.cppr.dev/"><img draggable="false" src={directory} alt="directory"></img></a>
             <a title="Discord" draggable="false" target="_blank" rel="noopener noreferrer" href="https://discord.com/users/307273393600724994/"><img draggable="false" src={discord} alt="discord"></img></a>
-            <a title="GitHub" draggable="false" target="_blank" rel="noopener noreferrer" href="https://github.com/cooper25"><img draggable="false" src={github} alt="github"></img></a>
             <a title="Twitter" draggable="false" target="_blank" rel="noopener noreferrer" href="https://twitter.com/loertis_"><img draggable="false" src={twitter} alt="twitter"></img></a>
+            <a title="GitHub" draggable="false" target="_blank" rel="noopener noreferrer" href="https://github.com/cooper25"><img draggable="false" src={github} alt="github"></img></a>
             <a title="Behance" draggable="false" target="_blank" rel="noopener noreferrer" href="https://behance.net/coopertsoris"><img draggable="false" src={behance} alt="behance"></img></a>
           </div>
         </div>
       </div>
       <div className="right_image-container">
         <div className="right_image" style={{backgroundImage: `url(${data.projectImage})`}}></div>
-        {/*<a target="_blank" rel="noopener noreferrer" href="https://behance.net/coopertsoris"><footer style={{marginBottom: "80px", background: "#ffffff", color: "black"}}>View More Projects</footer></a>*/}
         <a target="_blank" rel="noopener noreferrer" href={data.projectLink}><footer>View <b>{data.projectName}</b> on <b>Behance</b></footer></a>
       </div>
     </body>
