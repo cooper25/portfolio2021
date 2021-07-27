@@ -144,15 +144,15 @@ footer a {
 @keyframes fadein {
     65% {opacity: 0%;}
     80% {opacity: 100%;}
-    100% {opacity: 100%;}
+    100% {opacity: 100%; z-index: -10;}
 }
 @keyframes fadeout-logo {
     60% {opacity: 100%;}
-    100% {opacity: 0%;}
+    100% {opacity: 0%; z-index: -10;}
 }
 @keyframes slideout {
     75% {width: 100%;}
-    100% {width: 0%;}
+    100% {width: 0%; z-index: -10;}
 }
 @media screen and (max-width: 1100px) {
     .right_image-container {
