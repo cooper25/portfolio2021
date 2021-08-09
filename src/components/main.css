@@ -196,9 +196,6 @@ footer a {
     .screen-on-load .block {
         background: black;
     }
-    .screen-on-load img {
-        filter: invert(100%);
-    }
     body {
         cursor: url("../images/cursorlight.png"), auto;
     }

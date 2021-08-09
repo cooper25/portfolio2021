@@ -10,7 +10,6 @@ import github from "../images/icons/github.png"
 import twitter from "../images/icons/twitter.png"
 import behance from "../images/icons/behance.png"
 import favicon from "../images/icons/favicon.png"
-import logomark from "../images/logomark.svg"
 
 // Banner Display
 var objects = gallery.length + 1
@@ -39,7 +38,7 @@ const IndexPage = () => {
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1a7b87ab2d484241818047ef8bf2771d"}'></script>
       </Helmet>
       <div className="screen-on-load">
-        <img draggable="false" alt="cooper tsoris" src={logomark} height="150"/>
+        <img draggable="false" alt="cooper tsoris" src={cooper} height="35"/>
         <div className="block top"></div>
         <div style={{position: "absolute", right: "0px"}} className="block bottom"></div>
       </div>
