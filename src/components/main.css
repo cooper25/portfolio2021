@@ -130,6 +130,7 @@ footer a {
     right: 0px;
 }
 .screen-on-load img {
+    filter: invert(100%);
     animation: 1s linear fadeout-logo;
     animation-fill-mode: forwards;
     position: absolute;
@@ -195,6 +196,9 @@ footer a {
     }
     .screen-on-load .block {
         background: black;
+    }
+    .screen-on-load img {
+        filter: invert(0%);
     }
     body {
         cursor: url("../images/cursorlight.png"), auto;
