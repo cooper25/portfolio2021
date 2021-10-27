@@ -36,7 +36,7 @@ const IndexPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href={favicon}/>
         <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1a7b87ab2d484241818047ef8bf2771d"}'></script>
-        <script src='https://http://cooper25.github.io/hotjar.js'></script>
+        <script defer src='https://http://cooper25.github.io/hotjar.js'></script>
       </Helmet>
       <div className="screen-on-load">
         <img draggable="false" alt="cooper tsoris" src={cooper} height="35"/>
