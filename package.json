@@ -23,5 +23,15 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
-  }
+  },
+  "main": "gatsby-config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooper25/portfolio2021.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cooper25/portfolio2021/issues"
+  },
+  "homepage": "https://github.com/cooper25/portfolio2021#readme"
 }

@@ -68,7 +68,7 @@ p {
     margin: 0px;
 }
 .bottom-socials img {
-    transition: .1s;
+    transition: .2s;
     max-height: 16px;
     min-height: 16px;
     margin: 0px;
@@ -76,8 +76,8 @@ p {
     cursor: pointer;
 }
 .bottom-socials img:hover {
-    padding: 3px 5px;
-}
+    transform: scale(1.2,1.2)
+} 
 footer {
     transition: .2s;
     margin: 30px;
