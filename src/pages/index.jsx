@@ -12,14 +12,15 @@ import twitter from "../images/icons/twitter.png"
 import behance from "../images/icons/behance.png"
 import favicon from "../images/icons/favicon.png"
 
-// Plausible Analytics
-const { enableAutoPageviews } = Plausible({
-  domain: 'cppr.dev',
-  trackLocalhost: true,
-  apiHost: 'https://plausible.tsor.is'
-})
+if(typeof window !== `undefined`) {
+  const { enableAutoPageviews } = Plausible({
+    domain: 'cppr.dev',
+    trackLocalhost: true,
+    apiHost: 'https://plausible.tsor.is'
+  })
 
-enableAutoPageviews()
+  enableAutoPageviews()
+}
 
 // Banner Display
 var objects = gallery.length + 1
