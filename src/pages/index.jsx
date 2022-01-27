@@ -16,7 +16,7 @@ import favicon from "../images/icons/favicon.png"
 const { enableAutoPageviews } = Plausible({
   domain: 'cppr.dev',
   trackLocalhost: true,
-  apiHost: 'http://95.216.146.172:8000'
+  apiHost: 'https://plausible.tsor.is'
 })
 
 enableAutoPageviews()
