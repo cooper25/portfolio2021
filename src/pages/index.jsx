@@ -35,7 +35,7 @@ const IndexPage = () => {
         <meta name="theme-color" content="#000000"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href={favicon}/>
-        <script defer data-domain="cppr.dev" src="http://tsor.is:8000/js/plausible.js"></script>
+        <script defer data-domain="cppr.dev" src="https://cooper25.github.io/plausible.js"></script>
       </Helmet>
       <div className="screen-on-load">
         <img draggable="false" alt="cooper tsoris" src={cooper} height="35"/>
