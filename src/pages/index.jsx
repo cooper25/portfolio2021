@@ -1,5 +1,6 @@
 import * as React from "react"
 import Helmet from "react-helmet"
+import Plausible from 'plausible-tracker'
 import "../components/main.css"
 import gallery from "../components/gallery.json"
 import cooper from "../images/cooper.png"
@@ -10,6 +11,15 @@ import github from "../images/icons/github.png"
 import twitter from "../images/icons/twitter.png"
 import behance from "../images/icons/behance.png"
 import favicon from "../images/icons/favicon.png"
+
+// Plausible Analytics
+const { enableAutoPageviews } = Plausible({
+  domain: 'cppr.dev',
+  trackLocalhost: true,
+  apiHost: 'http://95.216.146.172:8000'
+})
+
+enableAutoPageviews()
 
 // Banner Display
 var objects = gallery.length + 1
@@ -35,7 +45,6 @@ const IndexPage = () => {
         <meta name="theme-color" content="#000000"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="shortcut icon" href={favicon}/>
-        <script defer data-domain="cppr.dev" src="https://cooper25.github.io/plausible.js"></script>
       </Helmet>
       <div className="screen-on-load">
         <img draggable="false" alt="cooper tsoris" src={cooper} height="35"/>
