@@ -26,6 +26,16 @@ if(typeof window !== `undefined`) {
 var objects = gallery.length + 1
 var data = gallery[Math.floor(Math.random() * objects)]
 
+var projLink = data.projectLink;
+var projButton;
+
+if (projLink === false) {
+  projButton = data.projectName
+} else {
+  projLink = data.projectLink
+  projButton = `View ${data.projectName} on Behance`
+}
+
 const IndexPage = () => {
   return (
     <body>
@@ -71,7 +81,7 @@ const IndexPage = () => {
         </div>
         <div className="right_image-container">
           <div className="right_image" style={{backgroundImage: `url(${data.projectImage})`}}></div>
-          <a target="_blank" rel="noopener noreferrer" href={data.projectLink}><footer>View <b>{data.projectName}</b> on <b>Behance</b></footer></a>
+          <a target="_blank" rel="noopener noreferrer" href={projLink}><footer>{projButton}</footer></a>
         </div>
       </div>
     </body>
